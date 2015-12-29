@@ -13,7 +13,8 @@
    <!-- CSS -->
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/font-awesome.css">
+   <link rel="stylesheet" href="fonts/font-awesome.css">
+   <link rel="stylesheet" href="css/dropit.css">
  
  </head>
   <body class="dashboard">
@@ -25,8 +26,10 @@
        <ul>
          <li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
          <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
-         <li><a href="#"><i class="fa fa-picture-o"></i> Images</a></li>
+         <li><a href="file:///C:/Users/Daisy/Desktop/Blocbox/fav%20images.html"><i class="fa fa-picture-o"></i>Images</a></li>
          <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
+
+        
        </ul>
        <p>Boxes</p>
        <ul>
@@ -38,7 +41,16 @@
      <div class="settings">
      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/128.jpg">
      <p>Daisy Cheng</p>
-     <a href="#"><i class="fa fa-cog"></i></a>
+     <ul class="menu act">
+     <li>
+      <a href="#" class="fa fa-cog"></a>
+      <ul>
+      <li><a href="#"><i class="fa fa-cog"></i> My Account</a></li>
+      <li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
+      <li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+      </ul>
+      </li>
+      </ul>
    </div>
    </nav>
    <main role="main">
@@ -47,7 +59,16 @@
      <div class="container">
        <div class="header">
          <h1>All Items</h1>
-         <a href="#" class="btn">+ Add</a>
+          <ul class="menu">
+            <li>
+              <a href="#" class="btn">+ Add</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
        </div>
      </div>
      <div class="container">
@@ -106,14 +127,17 @@
          <div class="item-box">
          <h2><a href="#">Why storing inspiration is great</a></h2>
          <p>blocbox is a new tool to help collect and store your inspiration and information. From images, to links, to notes like this one, you can keep track of all your favorite things.</p>
-        <div class="content-item">
-         <div class="item-box">
-         <h2><a href="file:///C:/Users/Daisy/Desktop/Blocbox/fav%20images.html">Favorite Images</a></h2>
           </div>
          </div>
        </div>
      </div>
    </section>
  </main>
+    <script src="js/jquery-2.1.4.min.js"></script>
+   <script src="js/dropit.js"></script>
+   <script type="text/javascript">
+     $(".menu").dropit();
+     $(".menu act").dropit();
+   </script>
  </body>
  </html>
