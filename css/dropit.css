@@ -21,7 +21,7 @@
   position: absolute;
   top: 100%;
   right: 0; 
-  z-index: 1000;
+  z-index: 100;
   display: none;
   min-width: 150px;
   min-width: 100px;
@@ -45,7 +45,7 @@
   border-color: #FFFFFF transparent;
   display: block;
   width: 0;
-  z-index: 0;
+  z-index: 100;
   top: -8px;
   right: 10px;
  }
@@ -63,9 +63,24 @@
   font-weight:100;
  }
 
- /* Account Setting */
+/* Second Drop It */
+ .menu-alt .dropit-submenu {
+  top: auto;
+  bottom: 100%;
+  right: auto;
+  left: -10px;
+ }
+ .menu-alt .dropit-open .dropit-submenu:after {
+  border-width: 8px 8px 0;
+  top: auto;
+  bottom: -8px;
+  right: auto;
+  left: 10px;
+ }
 
- .dropit {
+
+
+ .dropit2 {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -73,12 +88,12 @@
   float:right;
   display:inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu {
+.dropit2 .dropit2-trigger { position: relative; }
+.dropit2 .dropit2-submenu {
   position: absolute;
   bottom: 100%;
   right: 0; 
-  z-index: 1000;
+  z-index: 0;
   display: none;
   min-width: 150px;
   min-width: 100px;
@@ -88,13 +103,13 @@
   margin: 0;
   margin: 20px 0 0;
 }
-.dropit .dropit-open .dropit-submenu {
+.dropit2 .dropit2-open .dropit2-submenu {
   display: block;
    background: #FFFFFF;
    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
    border-radius: 4px;
 }
- .dropit .dropit-open .dropit-submenu:after {
+ .dropit2 .dropit2-open .dropit2-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -102,18 +117,18 @@
   border-color: #FFFFFF transparent;
   display: block;
   width: 0;
-  z-index: 0;
+  z-index: 10;
   bottom: -8px;
   right: 10px;
  }
- .dropit .dropit-open .dropit-submenu li {
+ .dropit2 .dropit2-open .dropit2-submenu li {
   display: block;
   margin-top: 20px;
  }
- .dropit .dropit-open .dropit-submenu li:last-child {
+ .dropit2 .dropit2-open .dropit2-submenu li:last-child {
   margin-top: 0px;
  }
- .dropit .dropit-open .dropit-submenu li a {
+ .dropit2 .dropit2-open .dropit2-submenu li a {
   color:#34495E;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
